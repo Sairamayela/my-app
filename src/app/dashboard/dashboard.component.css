@@ -1,16 +1,25 @@
 .parent{
     width: 100vw;
     height: 100vh;
-    background-color: red;
     display: flex;
 }
 .left{
     width: 20%;
     height: 100%;
-    background-color: green;
+    background-color: white;
+
+    
+   
 }
+label{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
 .right{
     width: 80%;
     height: 100%;
-    background-color: rgb(236, 14, 188);
+    background-color: rgb(231, 130, 130);
 }
