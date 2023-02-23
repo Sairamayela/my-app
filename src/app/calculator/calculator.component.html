@@ -4,21 +4,21 @@
     <div class="parent">
        
         <div class="child1">
-            <form action="">
+            
                 <h1>CALCULATOR</h1>
-                <input type="number" placeholder="0">
+                <input type="number" placeholder="0" [(ngModel)]="number1">
                 <br>
-                <input type="number" placeholder="0">
+                <input type="number" placeholder="0" [(ngModel)]="number2">
                 <br>
                 <br>
                 <div>
-                    <button>ADD+</button>
-                    <BUtton>SUB-</BUtton>
-                    <button>MUL*</button>
-                    <button>DIV/</button>
-                <h1>result 0</h1>
+                    <button (click)="add()">ADD+</button>
+                    <button (click)="sub()">SUB-</button>
+                    <button (click)="mul()">MUL*</button>
+                    <button (click)="div()">DIV/</button>
+                <h1>result is {{result}}</h1>
                 </div>
-            </form>
+            
         </div>
     </div>
 
