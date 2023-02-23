@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="left">
-        <label> Account</label>
-        <label>Turmeric</label>
+        <label routerLink="home"> Account</label>
+        <label routerLink="calculator">Turmeric</label>
         <label>Mirchi</label>
         <label>Masala karam</label>
         <label>Cloves</label>
@@ -9,8 +9,10 @@
         <label>Star Anise</label>
         <label>About</label>
         <label>Help</label>
+        <button class="btn btn-primary" routerLink="/login">LogOut</button>
     </div>
-    <div class="right">
 
+    <div class="right">
+        <router-outlet></router-outlet>
     </div>
 </div>

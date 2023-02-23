@@ -7,6 +7,7 @@
     width: 20%;
     height: 100%;
     background-color: white;
+    text-align: center;
 
     
    
@@ -16,10 +17,19 @@ label{
     display: flex;
     justify-content: center;
     margin: 4%;
+    
+
+}
+label:hover{
+    background-color: aqua;
+    cursor: pointer;
 }
 
 .right{
     width: 80%;
     height: 100%;
     background-color: rgb(231, 130, 130);
+}
+button{
+    
 }
