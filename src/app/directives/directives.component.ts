@@ -22,4 +22,5 @@ public products:any =[
   {name:'bike',price:'150',rating:2},
   {name:'gold',price:'180',rating:2}
 ]
+public today:any = new Date();
 }

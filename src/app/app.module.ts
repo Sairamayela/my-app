@@ -14,6 +14,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WishComponent } from './wish/wish.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { WishComponent } from './wish/wish.component';
     RectangleComponent,
     DirectivesComponent,
     RegistrationComponent,
-    WishComponent
+    WishComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
