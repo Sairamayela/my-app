@@ -15,6 +15,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WishComponent } from './wish/wish.component';
 import { CartComponent } from './cart/cart.component';
+import { GradeComponent } from './grade/grade.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CartComponent } from './cart/cart.component';
     DirectivesComponent,
     RegistrationComponent,
     WishComponent,
-    CartComponent
+    CartComponent,
+    GradeComponent
   ],
   imports: [
     BrowserModule,

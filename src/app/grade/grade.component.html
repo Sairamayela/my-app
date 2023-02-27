@@ -1,0 +1,11 @@
+<div class="parent">
+    <div class="child">
+        <h1>Grade Calculator</h1>
+        <label for=""><b> Marks :</b></label>
+        <input type="number" [(ngModel)]="marks">
+        <h1 *ngIf="marks<=100 && marks>=80">A</h1>
+        <h1 *ngIf="marks<=79 && marks>=60">B</h1>
+        <h1 *ngIf="marks<=59 && marks>=35">C</h1>
+        <h1 *ngIf="marks<=34 && marks>=0">fail</h1>
+    </div>
+</div>
