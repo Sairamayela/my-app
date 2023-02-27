@@ -1,0 +1,22 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5%;
+}
+button{
+    margin: 5%;
+}
+input{
+    margin: 5%;
+}

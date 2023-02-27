@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class RectangleComponent {
 public length:number =0;
 public width:number =0;
-public result:number =0;
+public area:number =0;
 public perimeter:number =0;
  
-area(){
-  this.result = this.length * this.width;
+area1(){
+  this.area = this.length * this.width;
 }
 perimeter1(): void{
 this.perimeter = 2 * (this.length + this.width);

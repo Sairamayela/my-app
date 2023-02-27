@@ -1,0 +1,11 @@
+<div class="parent">
+    <div class="child">
+        <h1>WISH</h1>
+        <label for="">Time</label>
+        <input type="number" [(ngModel)]="time">
+        <h1 *ngIf="time>=0 && time<12">GM</h1>
+        <h1 *ngIf="time>=12 && time<17">GA</h1>
+        <h1 *ngIf="time>=17 && time<19">GE</h1>
+        <h1 *ngIf="time>=19 && time<24">GN</h1>
+    </div>
+</div>
