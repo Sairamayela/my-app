@@ -7,3 +7,11 @@
     text-align: center;
 
 }
+.minor{
+    color: white;
+    background-color: red;
+}
+.major{
+    color: white;
+    background-color: green;
+}

@@ -10,9 +10,9 @@ public ages:number[] = [10,20,30,40];
 public names:string[] = ["sai","ram","sai","ram"]
 public states:string[]= ["ap","ts","up","kra"]
 public users:any = [
-  {name:'abc',phone:9515969160},
-  {name:'hsg',phone:5465954545},
-  {name:'jhu',phone:5784545480}
+  {name:'abc',phone:9515969160,marks:25,age:15},
+  {name:'hsg',phone:5465954545,marks:55,age:18},
+  {name:'jhu',phone:5784545480,marks:85,age:20}
 ]
 public products:any =[
   {name:'pen',price:'10',rating:2},
