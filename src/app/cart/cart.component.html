@@ -1,4 +1,28 @@
+<button class="btn btn-primary" (click)="onlyfree()">only fee delivery</button>
 <button class="btn btn-danger" (click)="count()">cart items</button>
+<button class="btn btn-warning" (click)="lowToHigh()">low to high</button>
+<button class="btn btn-info" (click)="discount()">Apply flat 50%</button>
+<button class="btn btn-light" (click)="charges()">charges</button>
+<button class="btn btn-dark" (click)="sum()">total sum</button><br>
+<button class="btn btn-warning" (click)="highToLow()">high to low</button>
+<button class="btn btn-warning" (click)="lowToHighRating()">low to high rating</button>
+<button class="btn btn-warning" (click)="highToLowRating()">high to low rating</button>
+<br>
+<input type="text" placeholder="search" [(ngModel)]="term" (keypress)="search()"><br>
+<label for="">Name :</label>
+<input type="text" [(ngModel)]="product.name"><br>
+<label for="">Price :</label>
+<input type="number" [(ngModel)]="product.price"><br>
+<label for="">Rating :</label>
+<input type="number" [(ngModel)]="product.rating"><br>
+<label for="">Free Delivery :</label>
+<label for="">Yes</label>
+<input type="radio" name="fd" [(ngModel)]="product.isFreeDelivery" value="true">
+<label for="">No</label>
+<input type="radio" name="fd" [(ngModel)]="product.isFreeDelivery" value="false"><br>
+<button class="btn btn-danger" (click)="creat()">Create</button>
+
+
 <table class="table table-dark table-hover">
     <thead>
     <tr>

@@ -31,4 +31,44 @@ export class CartComponent {
   count(){
     alert("cart count is"+this.products.length)
   }
+  onlyfree(){
+    this.products = this.products.filter((product:any)=> product.isFreeDelivery == true);
+  }
+  lowToHigh(){
+    this.products = this.products.sort((a:any,b:any)=> a.price-b.price)
+  }
+  discount(){
+this.products = this.products.map((product:any)=>{
+  product.price=product.price/2;
+  return product;
+})
+  }
+  charges(){
+    this.products=this.products.map((product:any)=>{
+      if(product.isFreeDelivery==false){
+        product.price=product.price+20;
+      }
+      return product;
+    })
+  }
+  sum(){
+    alert(this.products.reduce((sum:any,product:any)=>sum+product.price,0));
+}
+highToLow(){
+  this.products = this.products.sort((a:any,b:any)=> b.price-a.price)
+}
+lowToHighRating(){
+  this.products = this.products.sort((a:any,b:any)=> a.rating-b.rating)
+}
+highToLowRating(){
+  this.products = this.products.sort((a:any,b:any)=> b.rating-a.rating)
+}
+public term:string="";
+search(){
+  this.products=this.products.filter((product:any)=> product.name.indexOf(this.term)!=-1);
+}
+public product:any={};
+creat(){
+  this.products.unshift(this.product);
+}
 }
