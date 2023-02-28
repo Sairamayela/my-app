@@ -1,0 +1,27 @@
+.parent{
+height: 100%;
+width: 100%;
+background-color: rgb(114, 176, 230);
+position: relative;
+}
+.child1{
+    position: absolute;
+    top: 10%;
+    height: 5%;
+    width: 100%;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 150%;
+}
+.child2{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

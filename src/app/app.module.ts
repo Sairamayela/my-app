@@ -16,6 +16,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { WishComponent } from './wish/wish.component';
 import { CartComponent } from './cart/cart.component';
 import { GradeComponent } from './grade/grade.component';
+import { CarComponent } from './car/car.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { GradeComponent } from './grade/grade.component';
     RegistrationComponent,
     WishComponent,
     CartComponent,
-    GradeComponent
+    GradeComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,

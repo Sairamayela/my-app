@@ -1,0 +1,16 @@
+<div class="parent">
+    <div class="child1">
+        <label for="">Company :</label>
+        <label for=""> Honda </label>
+        <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c1.jpg')">
+        <label for=""> audi </label>
+        <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c2.jpg')">
+        <label for=""> KIA </label>
+        <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c3.jpg')">
+        <label for=""> BMW </label>
+        <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c4.jpg')">
+    </div>
+    <div class="child2">
+        <img [src]="cars">
+    </div>
+</div>
