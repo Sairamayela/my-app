@@ -1,0 +1,16 @@
+<!-- <pre>{{products|json}}</pre> -->
+<div class="parent">
+    <div class="child" *ngFor="let product of products">
+        <label >{{product.id}}</label>
+        <label >{{product.title}}</label>
+        <label >{{product.price}}</label>
+        <!-- <label >{{product.description}}</label> -->
+        <label >{{product.category}}</label>
+        <label >
+            <img src="{{product.image}}" alt="">
+        </label>
+        <label >{{product.rate}}</label>
+        <label >{{product.count}}</label>
+        
+    </div>
+</div>

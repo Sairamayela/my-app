@@ -1,0 +1,16 @@
+.parent{
+    height: 100%;
+    width: 100%;
+}
+.child{
+    height: 30%;
+    width: 20%;
+    background-color: white;
+    display: inline-block;
+    border:5px solid red;
+    border-radius: 10px;
+}
+img{
+    height: 20%;
+    width: 20%;
+}

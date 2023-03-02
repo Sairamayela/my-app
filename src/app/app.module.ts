@@ -18,6 +18,11 @@ import { CartComponent } from './cart/cart.component';
 import { GradeComponent } from './grade/grade.component';
 import { CarComponent } from './car/car.component';
 import { PhonesComponent } from './phones/phones.component';
+import { UsersComponent } from './users/users.component';
+import { HttpClientModule } from '@angular/common/http';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { ImagesComponent } from './images/images.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +40,17 @@ import { PhonesComponent } from './phones/phones.component';
     CartComponent,
     GradeComponent,
     CarComponent,
-    PhonesComponent
+    PhonesComponent,
+    UsersComponent,
+    VehicleComponent,
+    ImagesComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,11 +8,15 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
+import { ImagesComponent } from './images/images.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PhonesComponent } from './phones/phones.component';
+import { ProductsComponent } from './products/products.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { UsersComponent } from './users/users.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 import { WishComponent } from './wish/wish.component';
 
 const routes: Routes = [
@@ -28,7 +32,11 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
     {path:'grade',component:GradeComponent},
     {path:'car',component:CarComponent},
-    {path:'phones',component:PhonesComponent}
+    {path:'phones',component:PhonesComponent},
+    {path:'users',component:UsersComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'images',component:ImagesComponent},
+    {path:'products',component:ProductsComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
