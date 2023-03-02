@@ -17,6 +17,7 @@ import { WishComponent } from './wish/wish.component';
 import { CartComponent } from './cart/cart.component';
 import { GradeComponent } from './grade/grade.component';
 import { CarComponent } from './car/car.component';
+import { PhonesComponent } from './phones/phones.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CarComponent } from './car/car.component';
     WishComponent,
     CartComponent,
     GradeComponent,
-    CarComponent
+    CarComponent,
+    PhonesComponent
   ],
   imports: [
     BrowserModule,

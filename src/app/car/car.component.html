@@ -9,8 +9,33 @@
         <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c3.jpg')">
         <label for=""> BMW </label>
         <input type="radio" name="car" [(ngModel)]="cars" (click)="car1('/assets/c4.jpg')">
-    </div>
+
+           </div>
     <div class="child2">
         <img [src]="cars">
+    </div>
+</div>
+
+
+
+<div class="parent1">
+    <div class="child3">
+        <label for="">Company :</label>
+        <label for=""> Honda </label>
+        <input type="radio" name="car" [(ngModel)]="company" value="honda">
+        <label for=""> audi </label>
+        <input type="radio" name="car" [(ngModel)]="company" value="kia">
+        <label for=""> KIA </label>
+        <input type="radio" name="car" [(ngModel)]="company" value="audi">
+        <label for=""> BMW </label>
+        <input type="radio" name="car" [(ngModel)]="company" value="BMW">
+
+
+    </div>
+    <div class="child4">
+        <img src="/assets/c1.jpg" *ngIf="company=='honda'">
+        <img src="/assets/c2.jpg" *ngIf="company=='kia'">
+        <img src="/assets/c3.jpg" *ngIf="company=='audi'">
+        <img src="/assets/c4.jpg" *ngIf="company=='BMW'">
     </div>
 </div>

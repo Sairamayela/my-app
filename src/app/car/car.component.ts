@@ -10,6 +10,7 @@ cars:any='';
 car1(image:any){
 this.cars=image;
 }
+public company:string="";
 
 
 }

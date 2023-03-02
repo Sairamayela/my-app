@@ -10,6 +10,7 @@ import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PhonesComponent } from './phones/phones.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WishComponent } from './wish/wish.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
     {path:'wish',component:WishComponent},
     {path:'cart',component:CartComponent},
     {path:'grade',component:GradeComponent},
-    {path:'car',component:CarComponent}
+    {path:'car',component:CarComponent},
+    {path:'phones',component:PhonesComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
