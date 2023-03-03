@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { ImagesComponent } from './images/images.component';
 import { ProductsComponent } from './products/products.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ProductsComponent } from './products/products.component';
     UsersComponent,
     VehicleComponent,
     ImagesComponent,
-    ProductsComponent
+    ProductsComponent,
+    AccountsComponent
   ],
   imports: [
     BrowserModule,
