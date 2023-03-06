@@ -24,6 +24,8 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { ImagesComponent } from './images/images.component';
 import { ProductsComponent } from './products/products.component';
 import { AccountsComponent } from './accounts/accounts.component';
+import { MailsComponent } from './mails/mails.component';
+import { ActivitesComponent } from './activites/activites.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { AccountsComponent } from './accounts/accounts.component';
     VehicleComponent,
     ImagesComponent,
     ProductsComponent,
-    AccountsComponent
+    AccountsComponent,
+    MailsComponent,
+    ActivitesComponent
   ],
   imports: [
     BrowserModule,

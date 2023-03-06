@@ -6,9 +6,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UsersService {
-
+public URL:string="https://62abe711bd0e5d29af16f450.mockapi.io/users";
   constructor(private _httpClient:HttpClient) { }
   getUsers():Observable<any>{
-    return this._httpClient.get("https://62abe711bd0e5d29af16f450.mockapi.io/users");
+    return this._httpClient.get(this.URL+"?limit=10&page=1");
+  }
+  getFliteredUsers(term:string):Observable<any>{
+    return this._httpClient.get(this.URL+"?filter="+term);
+  }
+  getSortedUsers(column:string,order:string):Observable<any>{
+    return this._httpClient.get(this.URL+"?sortBy="+column+"&order="+order);
+  }
+  getpagedUsers(page:number,limit:number):Observable<any>{
+    return this._httpClient.get(this.URL+"?limit="+limit+"&page="+page);
+  }
+  deleteUsers(id:string):Observable<any>{
+    return this._httpClient.delete(this.URL+"/"+id);
   }
 }

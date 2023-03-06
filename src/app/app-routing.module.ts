@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountsComponent } from './accounts/accounts.component';
+import { ActivitesComponent } from './activites/activites.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarComponent } from './car/car.component';
 import { CartComponent } from './cart/cart.component';
@@ -11,6 +12,7 @@ import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
 import { LoginComponent } from './login/login.component';
+import { MailsComponent } from './mails/mails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PhonesComponent } from './phones/phones.component';
 import { ProductsComponent } from './products/products.component';
@@ -38,7 +40,9 @@ const routes: Routes = [
     {path:'vehicle',component:VehicleComponent},
     {path:'images',component:ImagesComponent},
     {path:'products',component:ProductsComponent},
-    {path:'accounts',component:AccountsComponent}
+    {path:'accounts',component:AccountsComponent},
+    {path:'mails',component:MailsComponent},
+    {path:'activites',component:ActivitesComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
