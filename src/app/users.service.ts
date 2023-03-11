@@ -20,6 +20,9 @@ public URL:string="https://62abe711bd0e5d29af16f450.mockapi.io/users";
   getpagedUsers(page:number,limit:number):Observable<any>{
     return this._httpClient.get(this.URL+"?limit="+limit+"&page="+page);
   }
+  creatUsers(data:any):Observable<any>{
+    return this._httpClient.post(this.URL,data);
+  }
   deleteUsers(id:string):Observable<any>{
     return this._httpClient.delete(this.URL+"/"+id);
   }

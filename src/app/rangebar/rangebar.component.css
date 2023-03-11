@@ -1,0 +1,91 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.slider-container:hover .tooltip {
+  visibility: visible;
+}
+
+/* :host {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4c9aff;
+  box-shadow: 0 0 0 0.1rem rgba(76, 154, 255, 0.25);
+} */

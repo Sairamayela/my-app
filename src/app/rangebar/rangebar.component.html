@@ -1,0 +1,17 @@
+<div class="slider-container">
+  <input type="range" min="1" max="4" step="0.1" value="1" class="slider" id="mySlider" (input)="onZoomChange($event)">
+  <div class="tooltip" id="myTooltip">{{ zoom }}</div>
+</div>
+
+
+
+<br>
+
+
+<select [(ngModel)]="selectedColor" (change)="changeBackgroundColor()" >
+  <option value="white">White</option >
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  
+</select>

@@ -1,0 +1,84 @@
+<form [formGroup]="creatStudent">
+    <label for="">Name :</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">Age :</label>
+    <input type="text" formControlName="age">
+    <br>
+    <label for="">Email :</label>
+    <input type="text" formControlName="email">
+    <br>
+
+    <button class="btn btn-danger" (click)="creat()">Creat</button>
+</form>
+
+
+
+
+<!-- Nested form -->
+
+<form [formGroup]="form1">
+    <label for="">name</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">ib</label>
+    <input type="text" formControlName="id">
+    <br>
+    <label for="">city</label>
+    <input type="text" formControlName="city">
+    <br>
+    <div formGroupName="address">
+        <label for="">state :</label>
+        <input type="text" formControlName="state">
+        <br>
+        <label for="">pin :</label>
+        <input type="text" formControlName="pin">
+        <br>
+    </div>
+    <!-- Daynamic form -->
+
+
+    <label for="">Type :</label>
+    <label for="">dayscholor</label>
+    <input type="radio" name="type" formControlName="type" value="dayscholor">
+    <label for="">residentiol</label>
+    <input type="radio" name="type" formControlName="type" value="residentiol">
+    <br>
+    <div *ngIf="form1.get('type')?.value=='dayscholor'">
+        <label for="">bus free :</label>
+        <input type="text" formControlName="busFee">
+    </div>
+
+    <div *ngIf="form1.get('type')?.value=='residentiol'">
+        <label for="">hostal fee :</label>
+        <input type="text" formControlName="hostalFee">
+    </div>
+    <button class="btn btn-warning" (click)="add()"> add</button>
+    <br>
+
+
+    <!-- Form array -->
+
+    
+    <div formArrayName="cards">
+        <div *ngFor="let card of cardsFormArray.controls; let i = index">
+            <div formGroupName="{{i}}">
+                <h4>card{{i+1}}</h4>
+                <label for="">number :</label>
+                <input type="text" formControlName="number">
+                <br>
+                <label for="">expairy :</label>
+                <input type="text" formControlName="expairy">
+                <br>
+                <label for="">cvv :</label>
+                <input type="text" formControlName="cvv">
+                <br>
+                <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="btn btn-danger" (click)="submit()">submit</button>
+</form>

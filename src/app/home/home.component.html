@@ -6,14 +6,66 @@
         </h1>
     </div>
     <div class="child2">
-        <div class="c21">
+        <select class="s1">
+            <option>Regular</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+        <select class="s2">
+            <option>Hand Tossed</option>
+            <option>100% Wheat Thin Crust</option>
+            <option>Cheese Burst</option>
+            <option>Fresh Pan</option>
+            <option>Classic Hand Tossed </option>
+        </select>
+        <select class="s3" [style.backgroundColor]="selectedColor">
+            <option>Veg</option>
+            <option>Non-Veg</option>
+        </select>
+        <select [(ngModel)]="selectedColor">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+          <!-- <select id="selectedFruit" ng-model="selectedFruit" ng-options="fruit.name for fruit in fruits" ng-change="setBgColor()">
+            <option value="">Select a fruit</option>
+          </select> -->
+          <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
+            <option *ngFor="let fruit of fruits" [value]="fruit">{{fruit.name}}</option>
+          </select> -->
+          <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
+            <option *ngFor="let fruit of fruits" [ngValue]="fruit">{{ fruit.name }}</option>
+          </select> -->
+          <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()" [style.backgroundColor]="selectedFruit.color">
+            <option *ngFor="let fruit of fruits" [ngValue]="fruit">{{ fruit.name }}</option>
+          </select>
           
-        </div>
-
-        <div class="c22">
-
-        </div>
+          
+          
+          
+          <div [style.backgroundColor]="selectedColor">Some content with dynamic background color</div>
     </div>
-    <div class="child3">
+    <div class="pizza"></div>
     </div>
-</div>
+    <!DOCTYPE html>
+<html ng-app="plunker">
+
+  <!-- <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
+    <script src="app.js"></script>
+  </head> -->
+
+<!-- <body ng-controller="MainCtrl">
+  <select id="selectedFruit" ng-model="selectedFruit" style="background-color:{{JSON.parse($scope.selectedFruit).color}}" ng-change="setBgColor()">
+    <option ng-repeat="sdata in fruits" style="background-color:{{sdata.color}}" value="{{sdata}}">{{sdata.name}}</option>
+  </select>
+</body>
+
+</html> -->
+
+    

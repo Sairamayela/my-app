@@ -1,16 +1,16 @@
 <div class="parent">
     <div class="child">
-        <form action="">
+        <form [formGroup]="loginForm">
             <h1>R.R.Spices</h1>
             <div class="un">
                 <label for="">USER NAME :</label>
-                <input type="text" placeholder="Gmail Or Phone Number">
+                <input type="text" placeholder="Gmail Or Phone Number" formControlName="email">
             </div>
             <div class="pw">
                 <label for="">PASSWORD : </label>
-                <input type="text" placeholder="Enter Password">
+                <input type="text" placeholder="Enter Password" formControlName="password">
             </div>
-            <button routerLink="/dashboard">Login</button>
+            <button (click)="login()">Login</button>
             <div class="fp"> 
                 <label for="">Foregot Password?</label>
                 <label for="">Creat Account</label>

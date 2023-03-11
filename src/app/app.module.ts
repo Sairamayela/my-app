@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RegistrationComponent } from './registration/registration.component';
@@ -26,6 +26,9 @@ import { ProductsComponent } from './products/products.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { MailsComponent } from './mails/mails.component';
 import { ActivitesComponent } from './activites/activites.component';
+import { CreatUsersComponent } from './creat-users/creat-users.component';
+import { RangebarComponent } from './rangebar/rangebar.component';
+import { CreatStudentComponent } from './creat-student/creat-student.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +53,17 @@ import { ActivitesComponent } from './activites/activites.component';
     ProductsComponent,
     AccountsComponent,
     MailsComponent,
-    ActivitesComponent
+    ActivitesComponent,
+    CreatUsersComponent,
+    RangebarComponent,
+    CreatStudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

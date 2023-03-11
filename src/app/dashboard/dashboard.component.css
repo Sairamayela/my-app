@@ -29,7 +29,7 @@ label:hover{
 .right{
     width: 80%;
     height: 100%;
-    background-color: rgb(231, 130, 130);
+    /* background-color: rgb(231, 130, 130); */
     overflow: auto;
 }
 button{
