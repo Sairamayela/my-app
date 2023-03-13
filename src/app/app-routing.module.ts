@@ -11,6 +11,7 @@ import { CreatUsersComponent } from './creat-users/creat-users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { FormTask1Component } from './form-task1/form-task1.component';
 import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {
     path: 'dashboard', canActivate: [AuthenticationGuard], component: DashboardComponent, children: [
       { path: 'home', component: HomeComponent },
+      {path:'form-task1',component: FormTask1Component},
       { path: 'data-binding', component: DataBindingComponent },
       { path: 'calculator', component: CalculatorComponent },
       { path: 'rectangle', component: RectangleComponent },

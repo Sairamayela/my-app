@@ -29,6 +29,7 @@ import { ActivitesComponent } from './activites/activites.component';
 import { CreatUsersComponent } from './creat-users/creat-users.component';
 import { RangebarComponent } from './rangebar/rangebar.component';
 import { CreatStudentComponent } from './creat-student/creat-student.component';
+import { FormTask1Component } from './form-task1/form-task1.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { CreatStudentComponent } from './creat-student/creat-student.component';
     ActivitesComponent,
     CreatUsersComponent,
     RangebarComponent,
-    CreatStudentComponent
+    CreatStudentComponent,
+    FormTask1Component
   ],
   imports: [
     BrowserModule,

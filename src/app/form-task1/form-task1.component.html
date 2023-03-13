@@ -1,0 +1,96 @@
+<!-- {
+    name: pen, 
+    price: 20,
+    rating: 2.3,
+    deliceryAddress:{
+       hno:2-203,
+       city:Hyd,
+       pin:500072
+    },
+    comments:[
+      {person:"Anil", message:"pen is expensive"},
+      {person:"John", message:"pen is not working"},
+    ],
+    paymentType: UPI/Card,
+    upiAdress:---,
+    cardNumber:--   
+ } -->
+<br><br>
+<form [formGroup]="form">
+    <label>Name :</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label>price :</label>
+    <input type="text" formControlName="price">
+    <br>
+    <label>rating :</label>
+    <input type="text" formControlName="rating">
+    <br>
+    <div formGroupName="address">
+        <label>state :</label>
+        <input type="text" formControlName="state">
+        <br>
+        <label>doNo :</label>
+        <input type="text" formControlName="doNo">
+        <br>
+        <label>mandal :</label>
+        <input type="text" formControlName="mandal">
+        <br>
+    </div>
+    <label for="">Type</label>
+    <input type="radio" name="type" formControlName="type" value="dayscholor">
+    <label for="">residentiol</label>
+    <input type="radio" name="type" formControlName="type" value="residentiol">
+    <label for="">dayscholor</label>
+    <div *ngIf="form.get('type')?.value=='dayscholor'">
+        <label for="">bus fee</label>
+        <input type="text" formControlName="dayscholor">
+    </div>
+    <div *ngIf="form.get('type')?.value=='residentiol'">
+        <label for=""> hostal fee</label>
+        <input type="text" formControlName="residentiol">
+    </div>
+
+    <button class="btn btn-danger" (click)="creat()">creat</button>
+
+
+
+
+
+
+
+</form>
+<br><br><br>
+<form [formGroup]="form1">
+    <label for="">name</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">phone</label>
+    <input type="numder" formControlName="phone">
+    <br>
+    <label for="">city</label>
+    <input type="text" formControlName="city">
+    <br>
+    <div formGroupName="address">
+        <label for="">village</label>
+        <input type="text" formControlName="village">
+        <br>
+        <label for="">dist</label>
+        <input type="text" formControlName="dist">
+    </div>
+    <label for="">type</label>
+    <input type="radio" formControlName="type" name="type" value="dayscholor">
+    <label for="">dayscholor</label>
+    <input type="radio" formControlName="type" name="type" value="residentiol">
+    <label for="">residentiol</label>
+    <div *ngIf="form1.get('type')?.value=='dayscholor'">
+        <label for="">busFee:</label>
+        <input type="text" formControlName="dayscholor">
+    </div>
+    <div *ngIf="form1.get('type')?.value=='residentiol'">
+        <label for="">hostalFee:</label>
+        <input type="text" formControlName="residentiol">
+    </div>
+    <br>
+    <button class="btn btn-warning" (click)="creat1()">creat1</button>
+</form>
