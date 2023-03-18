@@ -6,6 +6,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarComponent } from './car/car.component';
 import { CartComponent } from './cart/cart.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
 import { CreatStudentComponent } from './creat-student/creat-student.component';
 import { CreatUsersComponent } from './creat-users/creat-users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -17,12 +18,16 @@ import { HomeComponent } from './home/home.component';
 import { ImagesComponent } from './images/images.component';
 import { LoginComponent } from './login/login.component';
 import { MailsComponent } from './mails/mails.component';
+import { NavComponent } from './nav/nav.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ParentComponent } from './parent/parent.component';
 import { PhonesComponent } from './phones/phones.component';
+import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { RangebarComponent } from './rangebar/rangebar.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsersComponent } from './users/users.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { WishComponent } from './wish/wish.component';
@@ -52,8 +57,14 @@ const routes: Routes = [
       { path: 'mails', component: MailsComponent },
       { path: 'activites', component: ActivitesComponent },
       { path: 'creat-users', component: CreatUsersComponent },
+      { path: 'creat-users/:id', component: CreatUsersComponent },
       { path: 'rangebar', component: RangebarComponent },
-      { path: 'creat-student', component:CreatStudentComponent}
+      { path: 'creat-student', component:CreatStudentComponent},
+      {path:'user-details/:id', component:UserDetailsComponent},
+      {path:'parent',component:ParentComponent},
+      {path:'product',component:ProductComponent},
+      {path:'nav',component:NavComponent},
+      {path:'cartlist',component:CartlistComponent}
     ]
   },
   { path: '', component: LoginComponent },

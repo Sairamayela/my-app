@@ -125,7 +125,7 @@
 
 
     <div formArrayName="cards">
-        <div *ngFor="let card of cardsFormArray.controls; let i = index">
+        <div *ngFor="let card of cardsFormArray.controls let i = index">
             <div formGroupName="{{i}}">
                 <h4>card{{i+1}}</h4>
                 <label for="">number :</label>
@@ -159,5 +159,5 @@
         </div>
     </div>
     <br>
-    <button class="btn btn-danger" (click)="submit()">submit</button>
+    <button [disabled]="form1.invalid" class="btn btn-danger" (click)="submit()">submit</button>
 </form>

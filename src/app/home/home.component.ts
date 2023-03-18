@@ -7,7 +7,7 @@
 // })
 // export class HomeComponent  {
 //   selectedColor: string = 'red';
-  
+
 //   angular.module('plunker', [])
 //   .controller('MainCtrl', function ($scope) {
 //     $scope.fruits = [
@@ -15,21 +15,23 @@
 //       {name: 'Banana', color: '#08c'},
 //       {name: 'Cherry', color: 'yellow'},
 //     ];
-    
+
 //     $scope.setBgColor = function() {
 //       $("#selectedFruit").css("background-color", JSON.parse($scope.selectedFruit).color);
 //     }
 //   });
 //   constructor() { }
 
-  
+
 // }
 import { Component } from '@angular/core';
+
 
 interface Fruit {
   name: string;
   color: string;
 }
+
 
 @Component({
   selector: 'app-home',
@@ -37,18 +39,45 @@ interface Fruit {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
   selectedColor: string = 'red';
   fruits: Fruit[] = [
-    {name: 'Veg', color: 'green'},
-    {name: 'Non-veg', color: 'red'},
+    { name: 'Veg', color: 'green' },
+    { name: 'Non-veg', color: 'red' },
   ];
+
+
+
 
   selectedFruit: Fruit = this.fruits[0];
   setBgColor(): void {
     const selectElement = document.getElementById('selectedFruit') as HTMLSelectElement;
     selectElement.style.backgroundColor = this.selectedFruit.color;
   }
-  
+
+  // selectedSize: string ='';
+  // heightValue: string ='';
+  // widthValue: string ='';
+  // ngOnChanges() {
+
+  //   switch (this.selectedSize) {
+  //     case 'regular':
+  //       this.heightValue = '10%';
+  //       this.widthValue = '20%';
+  //       break;
+  //     case 'medium':
+  //       this.heightValue = '20%';
+  //       this.widthValue = '40%';
+  //       break;
+  //     case 'large':
+  //       this.heightValue = '30%';
+  //       this.widthValue = '60%';
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // }
+
 
   // setBgColor(): void {
   //   const selectedFruit = this.selectedFruit;
@@ -60,4 +89,3 @@ export class HomeComponent {
   //   }
   // }
 }
-

@@ -30,6 +30,16 @@ import { CreatUsersComponent } from './creat-users/creat-users.component';
 import { RangebarComponent } from './rangebar/rangebar.component';
 import { CreatStudentComponent } from './creat-student/creat-student.component';
 import { FormTask1Component } from './form-task1/form-task1.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatBadgeModule} from '@angular/material/badge';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ProductComponent } from './product/product.component';
+import { NavComponent } from './nav/nav.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+
 
 @NgModule({
   declarations: [
@@ -58,14 +68,24 @@ import { FormTask1Component } from './form-task1/form-task1.component';
     CreatUsersComponent,
     RangebarComponent,
     CreatStudentComponent,
-    FormTask1Component
+    FormTask1Component,
+    UserDetailsComponent,
+    ParentComponent,
+    ChildComponent,
+    ProductComponent,
+    NavComponent,
+    CartlistComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatBadgeModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

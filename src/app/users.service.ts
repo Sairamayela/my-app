@@ -11,6 +11,9 @@ public URL:string="https://62abe711bd0e5d29af16f450.mockapi.io/users";
   getUsers():Observable<any>{
     return this._httpClient.get(this.URL+"?limit=10&page=1");
   }
+  getUser(id:string):Observable<any>{
+return this._httpClient.get(this.URL+"/"+id);
+  }
   getFliteredUsers(term:string):Observable<any>{
     return this._httpClient.get(this.URL+"?filter="+term);
   }
@@ -22,6 +25,9 @@ public URL:string="https://62abe711bd0e5d29af16f450.mockapi.io/users";
   }
   creatUsers(data:any):Observable<any>{
     return this._httpClient.post(this.URL,data);
+  }
+  updateUser(data:any,id:string):Observable<any>{
+    return this._httpClient.put(this.URL+"/"+id,data)
   }
   deleteUsers(id:string):Observable<any>{
     return this._httpClient.delete(this.URL+"/"+id);

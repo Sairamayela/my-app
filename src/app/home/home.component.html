@@ -1,56 +1,81 @@
 <div class="parent">
-    <div class="child1">
-        <h1>
-            <marquee behavior="" direction="left">30% offers avilable on every product.Home delivery is
-                avilable.Return is also accepted for quality damage</marquee>
-        </h1>
-    </div>
-    <div class="child2">
-        <select class="s1">
-            <option>Regular</option>
-            <option>Medium</option>
-            <option>Large</option>
-        </select>
-        <select class="s2">
-            <option>Hand Tossed</option>
-            <option>100% Wheat Thin Crust</option>
-            <option>Cheese Burst</option>
-            <option>Fresh Pan</option>
-            <option>Classic Hand Tossed </option>
-        </select>
-        <select class="s3" [style.backgroundColor]="selectedColor">
-            <option>Veg</option>
-            <option>Non-Veg</option>
-        </select>
-        <select [(ngModel)]="selectedColor">
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-          </select>
-          <!-- <select id="selectedFruit" ng-model="selectedFruit" ng-options="fruit.name for fruit in fruits" ng-change="setBgColor()">
+  <div class="child1">
+    <h1>
+      <marquee behavior="" direction="left">30% offers avilable on every product.Home delivery is
+        avilable.Return is also accepted for quality damage</marquee>
+    </h1>
+  </div>
+  <div class="child2">
+    <select class="s1">
+      <option>Regular</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+    <select class="s2">
+      <option>Hand Tossed</option>
+      <option>100% Wheat Thin Crust</option>
+      <option>Cheese Burst</option>
+      <option>Fresh Pan</option>
+      <option>Classic Hand Tossed </option>
+    </select>
+    <select class="s3" [style.backgroundColor]="selectedColor">
+      <option>Veg</option>
+      <option>Non-Veg</option>
+    </select>
+    <!-- <select [(ngModel)]="selectedSize">
+      <option value="regular">Regular</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select> -->
+    <select [(ngModel)]="selectedColor">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+    <!-- <select id="selectedFruit" ng-model="selectedFruit" ng-options="fruit.name for fruit in fruits" ng-change="setBgColor()">
             <option value="">Select a fruit</option>
           </select> -->
-          <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
+    <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
             <option *ngFor="let fruit of fruits" [value]="fruit">{{fruit.name}}</option>
           </select> -->
-          <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
+    <!-- <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()">
             <option *ngFor="let fruit of fruits" [ngValue]="fruit">{{ fruit.name }}</option>
           </select> -->
-          <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()" [style.backgroundColor]="selectedFruit.color">
-            <option *ngFor="let fruit of fruits" [ngValue]="fruit">{{ fruit.name }}</option>
-          </select>
-          
-          
-          
-          
-          <div [style.backgroundColor]="selectedColor">Some content with dynamic background color</div>
-    </div>
-    <div class="pizza"></div>
-    </div>
-    <!DOCTYPE html>
-<html ng-app="plunker">
+    <select [(ngModel)]="selectedFruit" (ngModelChange)="setBgColor()" [style.backgroundColor]="selectedFruit.color">
+      <option *ngFor="let fruit of fruits" [ngValue]="fruit">{{ fruit.name }}</option>
+    </select>
 
-  <!-- <head>
+
+
+
+    <div [style.backgroundColor]="selectedColor">Some content with dynamic background color</div>
+  </div>
+  <div class="pizza"></div>
+
+
+  <!-- <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+
+<div matBadge="4" [matBadgeOverlap]="false" class="demo-section">Text with a badge</div> -->
+
+  <!-- component.html -->
+
+
+<!-- <div [ngStyle]="{ 'height': heightValue, 'width': widthValue }"></div> -->
+
+</div>
+
+<!-- <head>
     <meta charset="utf-8" />
     <title>AngularJS Plunker</title>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
@@ -67,5 +92,3 @@
 </body>
 
 </html> -->
-
-    
